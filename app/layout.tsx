@@ -21,9 +21,12 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: `${basePath}/favicon.png`,
-    shortcut: `${basePath}/favicon.png`,
-    apple: `${basePath}/favicon.png`,
+    icon: [
+      { url: `${basePath}/favicon.ico?v=2`, type: "image/x-icon" },
+      { url: `${basePath}/favicon.png?v=2`, type: "image/png" },
+    ],
+    shortcut: `${basePath}/favicon.ico?v=2`,
+    apple: `${basePath}/apple-icon.png?v=2`,
   },
 };
 
