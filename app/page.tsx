@@ -251,10 +251,10 @@ export default function Home() {
         </div>
         <ul>
           <li>Move from overwhelm and anxiety towards steadiness and safety.</li>
-          <li>Navigate life changes with support, clarity and care.</li>
+          <li>Navigate life changes.</li>
           <li>Replace people-pleasing with clear, compassionate boundaries.</li>
           <li>Understand old patterns instead of feeling controlled by them.</li>
-          <li>Set meaningful goals and take practical steps towards them.</li>
+          <li>Support goal setting.</li>
           <li>Speak honestly, reconnect and build healthier relationships.</li>
           <li>Reconnect with energy, meaning, joy and the life you want.</li>
         </ul>
@@ -270,10 +270,7 @@ export default function Home() {
           <article>
             <b>01</b>
             <h4>SAFETY</h4>
-            <p>
-              Your story is met with compassion and without judgement. A
-              confidential space where you can simply be yourself.
-            </p>
+            <p>A confidential space where you can simply be yourself.</p>
           </article>
           <article>
             <b>02</b>
@@ -304,29 +301,36 @@ export default function Home() {
 
       <section className="approach textured" id="approach">
         <Daisy className="daisy-journey" />
-        <div className="journey-head">
-          <span>THE INSYNC APPROACH</span>
-          <h2>
-            Every age,
-            <br />
-            <em>stage & story</em>
-          </h2>
-          <p>
-            Healing looks different for everyone. That's why no two sessions are
-            the same.
-          </p>
+        <div className="approach-layout">
+          <div>
+            <span>EVERY AGE, STAGE & STORY</span>
+            <h2>
+              The INSYNC
+              <br />
+              <em>Approach</em>
+            </h2>
+          </div>
+          <figure className="approach-photo">
+            <img
+              src={assetPath("/images/hands.png")}
+              alt="A grounding hand over the heart"
+            />
+            <figcaption>Practical, human and whole-person support.</figcaption>
+          </figure>
         </div>
         <div className="approach-copy">
           <p>
-            At INSYNC, I don't believe in ticking boxes or following a script.
-            Instead, I draw from counselling psychology, life coaching, creative
-            techniques & mind-body practices to meet you exactly where you are.
+            Healing looks different for everyone. That's why no two sessions are
+            the same. At INSYNC, I don't believe in ticking boxes or following a
+            script.
           </p>
           <p>
-            Some sessions look like deep conversations. Others involve practical
-            coaching. Sometimes we'll use reflection exercises, journaling,
-            creative activities or movement to help you explore what words
-            can't always express.
+            Instead, I draw from counselling psychology, life coaching, creative
+            techniques & mind-body practices to meet you exactly where you are.
+            Some conversations look like deep conversations. Others involve
+            practice coaching. Sometimes we'll use reflection exercises,
+            journaling, creative activities or movement to help you explore what
+            words can't always express.
           </p>
         </div>
       </section>
