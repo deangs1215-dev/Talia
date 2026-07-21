@@ -454,7 +454,10 @@ export default function Home() {
           <em>to yourself.</em>
         </h2>
         <span>Begin with a complimentary, no-pressure 15-minute call.</span>
-        <a href="mailto:hello@taliapsychology.co.za">GET IN TOUCH&nbsp;&nbsp; -&gt;</a>
+        <div className="contact-actions">
+          <a href="mailto:insync.rsa@gmail.com">EMAIL INSYNC&nbsp;&nbsp; -&gt;</a>
+          <a href="https://wa.me/27762054661">WHATSAPP&nbsp;&nbsp; -&gt;</a>
+        </div>
       </section>
 
       <footer>
@@ -471,7 +474,9 @@ export default function Home() {
         <p>
           Johannesburg. In-person & online
           <br />
-          hello@taliapsychology.co.za
+          insync.rsa@gmail.com
+          <br />
+          WhatsApp: 076 205 4661
         </p>
         <small>© 2026 INSYNC WELLNESS</small>
       </footer>
