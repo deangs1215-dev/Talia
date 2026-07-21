@@ -201,7 +201,7 @@ export default function Home() {
 
       <section id="about" className="intro textured">
         <Daisy className="daisy-intro" />
-        <img src={assetPath("/images/hands.png")} alt="A grounding hand over the heart" />
+        <img src={assetPath("/images/about-talia.png")} alt="Talia Santos smiling among plants" />
         <div className="intro-copy">
           <span className="section-kicker">MEET TALIA</span>
           <h2>Hi, I'm Talia Santos</h2>
