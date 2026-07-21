@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Talia Psychologist Services | Johannesburg & Online",
-  description: "Warm, compassionate psychological services for individuals, couples and families in Johannesburg and online across South Africa.",
+  title: "INSYNC Wellness | Counselling & Coaching",
+  description: "Counselling and coaching with Talia Santos for people who want more than just coping.",
   other: {
     "codex-preview": "development",
   },
