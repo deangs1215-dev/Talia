@@ -201,3 +201,14 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
   .questions,.testimonials{padding-top:54px;padding-bottom:54px}
   .contact{padding-top:58px;padding-bottom:64px}
 }
+
+/* Compact INSYNC Approach spacing */
+.approach{padding-top:38px;padding-bottom:62px}
+.approach-layout{align-items:start}
+.approach-copy{margin-top:24px;padding-top:22px}
+
+@media(max-width:850px){
+  .approach{padding-top:46px;padding-bottom:54px}
+  .approach-layout{gap:28px}
+  .approach-copy{margin-top:24px;padding-top:20px}
+}
