@@ -163,13 +163,13 @@ export default function Home() {
           <small>WELLNESS</small>
         </a>
         <nav className={menu ? "show" : ""}>
-          <a href="#about">MEET TALIA</a>
-          <a href="#services">WORK WITH ME</a>
-          <a href="#approach">APPROACH</a>
-          <a href="#questions">QUESTIONS</a>
-          <a href="#contact">CONTACT</a>
+          <a href="#about" onClick={() => setMenu(false)}>MEET TALIA</a>
+          <a href="#services" onClick={() => setMenu(false)}>WORK WITH ME</a>
+          <a href="#approach" onClick={() => setMenu(false)}>APPROACH</a>
+          <a href="#questions" onClick={() => setMenu(false)}>QUESTIONS</a>
+          <a href="#contact" onClick={() => setMenu(false)}>CONTACT</a>
         </nav>
-        <button onClick={() => setMenu(!menu)}>{menu ? "CLOSE" : "MENU"}</button>
+        <button aria-expanded={menu} aria-label="Toggle navigation" onClick={() => setMenu(!menu)}>{menu ? "CLOSE" : "MENU"}</button>
       </header>
 
       <section className="hero insync-hero" id="home">
@@ -230,7 +230,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="help" id="services">
+      <section className="help" id="support">
         <div className="help-title">
           <span>Support for your whole story</span>
           <h2>
@@ -328,14 +328,14 @@ export default function Home() {
             Instead, I draw from counselling psychology, life coaching, creative
             techniques & mind-body practices to meet you exactly where you are.
             Some conversations look like deep conversations. Others involve
-            practice coaching. Sometimes we'll use reflection exercises,
+            practical coaching. Sometimes we'll use reflection exercises,
             journaling, creative activities or movement to help you explore what
             words can't always express.
           </p>
         </div>
       </section>
 
-      <section className="services">
+      <section className="services" id="services">
         <div className="service-heading">
           <small>WAYS TO WORK WITH INSYNC</small>
           <h2>
@@ -424,7 +424,7 @@ export default function Home() {
         <div>
           {faqs.map(([question, answer], i) => (
             <article key={question}>
-              <button onClick={() => setFaq(faq === i ? null : i)}>
+              <button aria-expanded={faq === i} onClick={() => setFaq(faq === i ? null : i)}>
                 <span>0{i + 1}</span>
                 {question}
                 <b>{faq === i ? "-" : "+"}</b>

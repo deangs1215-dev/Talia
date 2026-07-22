@@ -17,9 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "INSYNC Wellness | Counselling & Coaching",
   description: "Counselling and coaching with Talia Santos for people who want more than just coping.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: [
       { url: `${basePath}/favicon.ico?v=2`, type: "image/x-icon" },

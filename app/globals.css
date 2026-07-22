@@ -17,3 +17,154 @@ header nav a{position:relative;z-index:1;padding:12px 8px;transition:color .35s 
 .insync-logo{width:auto;height:auto;align-items:flex-start;color:var(--olive);letter-spacing:.14em}.insync-logo span{font:34px Italiana,serif;line-height:1}.insync-logo small{font:9px Montserrat,sans-serif;letter-spacing:.42em;margin-top:8px;color:var(--sage-dark)}footer .insync-logo{color:#eee9e3}.footer-logo.insync-logo{width:auto}.footer-logo.insync-logo small{color:#dfe5d7}@media(max-width:850px){.insync-logo span{font-size:26px}.insync-logo small{font-size:7px}}
 .contact-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.contact-actions a{display:inline-block;background:var(--sage-dark);color:#fff;padding:18px 28px;font-size:9px;letter-spacing:.2em}@media(max-width:850px){.contact-actions{flex-direction:column;align-items:center}.contact-actions a{width:min(280px,90%);text-align:center}}
 .approach-layout{display:grid;grid-template-columns:1fr minmax(280px,.72fr);gap:70px;align-items:end}.approach-layout>div>span{font-size:9px;letter-spacing:.22em}.approach-photo{position:relative;margin:0;padding:13px 13px 40px;background:#f4eee8;box-shadow:0 18px 42px rgba(70,48,43,.14);transform:rotate(1.4deg)}.approach-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.7) sepia(.08) contrast(.94)}.approach-photo figcaption{position:absolute;left:24px;right:24px;bottom:13px;color:#758068;font:italic 18px "Cormorant Garamond",serif}.approach .journey-head{display:none}@media(max-width:850px){.approach-layout{grid-template-columns:1fr;gap:36px}.approach-photo{max-width:430px;margin:0 auto}.approach-copy{gap:24px}}
+
+/* Professional layout system */
+:root{--page:min(1180px,calc(100% - 64px));--line:rgba(79,81,71,.24);--shadow:0 18px 45px rgba(65,58,50,.12)}
+section{scroll-margin-top:76px}
+.dandelion-drift{display:none}
+.notice{height:auto;min-height:38px;padding:9px 20px;display:grid;place-items:center;line-height:1.5}
+header{position:relative;top:auto;height:88px;padding:0 max(32px,calc((100% - 1180px)/2));background:rgba(248,245,240,.97);border-bottom:1px solid rgba(79,81,71,.12)}
+header nav{gap:34px}
+header nav a{padding:12px 0;font-weight:400}
+.hero{height:auto;min-height:660px}
+.left-paper{width:47%;height:100%;padding:30px 9% 30px max(32px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:40px;line-height:1.3;letter-spacing:.06em}
+.left-paper p{margin-top:24px;font-size:14px;line-height:1.8}
+.hero-photo{left:42%;top:58px;width:31%;height:544px;padding:10px;background:rgba(248,245,240,.78);box-shadow:var(--shadow)}
+.hero-photo img{object-position:center 30%}
+.hero-botanical{width:53%;opacity:.34}
+.hero-quote{right:max(32px,calc((100vw - 1180px)/2));top:190px;width:22%;font-size:22px;line-height:1.5}
+.tape{left:52%;top:42px;width:100px;height:36px}
+.intro{width:var(--page);margin:0 auto;padding:92px 0;grid-template-columns:minmax(320px,.8fr) minmax(0,1.2fr);gap:80px}
+.intro>img{height:570px;padding:12px}
+.intro-copy h2{margin:0 0 24px;font-size:45px}
+.intro-copy p{margin:0 0 15px;font-size:13px;line-height:1.8}
+.intro-copy strong{margin:24px 0;font-size:27px}
+.section-kicker{margin-bottom:16px}
+.help{padding:88px max(32px,calc((100% - 1180px)/2));grid-template-columns:.9fr 1.1fr;gap:90px}
+.help h2{margin:24px 0 0;font-size:72px}
+.help li{padding:17px 0 17px 30px;font-size:19px}
+.help li:last-child{border-bottom:1px solid rgba(255,255,255,.35)}
+.help-photo{width:min(360px,90%);margin:38px 0 0 10px;padding:10px 10px 34px}
+.help-photo figcaption{font-size:16px}
+.touchstones{padding:86px max(32px,calc((100% - 1180px)/2))}
+.touchstones h2{margin:20px 0 4px;font-size:92px;line-height:.9}
+.touchstones>h3{margin:0;font-size:22px}
+.touch-grid{margin-top:48px}
+.touch-grid article{min-height:220px;padding:30px 24px}
+.touch-grid h4{margin:22px 0 15px;font-size:21px}
+.touch-grid p{margin:0;font-size:11px}
+.approach{padding:90px max(32px,calc((100% - 1180px)/2))}
+.approach-layout{grid-template-columns:1fr 390px;gap:90px;align-items:center}
+.approach h2{margin:24px 0 0;font-size:78px;line-height:.9}
+.approach-photo{padding:10px 10px 36px}
+.approach-photo img{height:390px;aspect-ratio:auto}
+.approach-photo figcaption{left:20px;bottom:10px;font-size:16px}
+.approach-copy{gap:56px;margin-top:48px;padding-top:28px}
+.approach-copy p{font-size:13px;line-height:1.85}
+.services{padding:90px max(32px,calc((100% - 1180px)/2));grid-template-columns:.78fr 1.22fr;gap:90px}
+.service-heading{top:30px}
+.service-heading h2{margin:24px 0 0;font-size:51px}
+.service-list article{grid-template-columns:34px 1fr;gap:10px 20px;padding:25px 0}
+.service-list article:last-child{border-bottom:1px solid rgba(255,255,255,.32)}
+.service-list h3{font-size:26px}
+.service-list p{font-size:11px;line-height:1.75}
+.quote-band{height:470px}
+.quote-band img{object-position:center 45%}
+.quote-band blockquote{font-size:44px}
+.journey{padding:90px max(32px,calc((100% - 1180px)/2))}
+.journey h2{margin:22px 0 0;font-size:78px;line-height:.86}
+.journey-head p{margin-bottom:2px;font-size:12px}
+.steps{gap:42px;margin-top:58px}
+.steps article{margin:0;padding:23px 0 0}
+.steps b{font-size:45px}
+.steps h3{margin:15px 0 12px;font-size:19px}
+.steps p{margin:0;font-size:11px}
+.questions{padding:90px max(32px,calc((100% - 1180px)/2));grid-template-columns:.75fr 1.25fr;gap:90px}
+.questions h2{margin:22px 0 24px;font-size:68px}
+.questions>div:first-child p{margin:0;font-size:12px}
+.questions button{grid-template-columns:36px 1fr 24px;gap:12px;align-items:center;padding:21px 0;font-size:20px}
+.questions article p{margin:0;padding:0 36px 22px 48px;font-size:11px}
+.testimonials{padding:90px max(32px,calc((100% - 1180px)/2))}
+.testimonials h2{margin:22px 0 44px;font-size:68px}
+.testimonial-grid{gap:24px}
+.testimonial-grid article{min-height:230px;display:flex;flex-direction:column;justify-content:space-between;padding:28px}
+.testimonial-grid p{font-size:21px}
+.contact{padding:88px 20px 96px}
+.contact h2{margin:24px 0;font-size:72px}
+.contact>span{margin-bottom:28px;font-size:22px}
+.contact-actions a{min-width:170px;padding:16px 22px}
+footer{padding:54px max(32px,calc((100% - 1180px)/2)) 26px;grid-template-columns:.9fr 1.1fr 1fr;gap:40px}
+footer>div{flex-wrap:wrap;gap:18px 22px}
+
+@media(max-width:1000px) and (min-width:851px){
+  header nav{gap:20px}
+  .hero-quote{font-size:19px}
+  .intro,.help,.approach-layout,.services,.questions{gap:55px}
+  .touch-grid{grid-template-columns:repeat(2,1fr)}
+  .touch-grid article:nth-child(2){border-right:0}
+  .touch-grid article:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .testimonial-grid{grid-template-columns:1fr 1fr}
+  .testimonial-grid article:last-child{grid-column:1/-1;min-height:auto}
+}
+
+@media(max-width:850px){
+  :root{--page:min(100% - 36px,620px)}
+  .notice{min-height:42px;padding-inline:14px;font-size:8px}
+  header{height:72px;padding:0 18px}
+  header nav{top:72px;padding:20px 18px 26px;gap:4px;border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(65,58,50,.1)}
+  header nav a{width:100%;padding:11px 0}
+  .hero{min-height:710px}
+  .left-paper{width:100%;height:310px;padding:54px 24px 28px;justify-content:flex-start}
+  .hero h1{font-size:31px}
+  .left-paper p{margin-top:17px;font-size:12px;line-height:1.65}
+  .hero-photo{left:8%;top:282px;width:56%;height:348px;padding:7px}
+  .hero-botanical{top:310px;width:100%;height:400px}
+  .hero-quote{display:block;left:67%;right:4%;top:355px;bottom:auto;width:auto;font-size:13px;line-height:1.5}
+  .tape{left:31%;top:268px;width:78px;height:28px}
+  .intro{padding:68px 0;grid-template-columns:1fr;gap:42px}
+  .intro>img{width:min(100%,460px);height:470px;margin:0 auto}
+  .intro-copy h2{font-size:37px}
+  .intro-copy strong{font-size:24px}
+  .help,.approach,.services,.journey,.questions,.testimonials{padding:68px 18px}
+  .help,.services,.questions{grid-template-columns:1fr;gap:48px}
+  .help h2{font-size:58px}
+  .help-photo{margin:34px auto 0}
+  .help li{font-size:18px}
+  .touchstones{padding:68px 18px}
+  .touchstones h2{font-size:66px}
+  .touch-grid{grid-template-columns:1fr;margin-top:38px}
+  .touch-grid article{min-height:0;border-right:0;border-bottom:1px solid var(--line)}
+  .touch-grid article:last-child{border-bottom:0}
+  .approach-layout{grid-template-columns:1fr;gap:38px}
+  .approach h2{font-size:59px}
+  .approach-photo{width:min(100%,430px);margin:0 auto}
+  .approach-photo img{height:350px}
+  .approach-copy{grid-template-columns:1fr;gap:18px;margin-top:38px;padding-top:24px}
+  .service-heading{position:static}
+  .service-heading h2{font-size:43px}
+  .service-list article{padding:22px 0}
+  .service-list h3{font-size:23px}
+  .quote-band{height:390px}
+  .quote-band blockquote{padding:0 20px;font-size:34px}
+  .journey-head{grid-template-columns:1fr;gap:24px}
+  .journey h2{font-size:62px}
+  .journey-head p{margin:0}
+  .steps{grid-template-columns:1fr;gap:30px;margin-top:44px}
+  .questions h2,.testimonials h2{font-size:53px}
+  .testimonial-grid{grid-template-columns:1fr}
+  .testimonial-grid article,.testimonial-grid article:last-child{grid-column:auto;min-height:0}
+  .contact{padding:72px 18px 78px}
+  .contact h2{font-size:56px}
+  .contact>span{font-size:19px}
+  footer{padding:46px 18px 24px;grid-template-columns:1fr;gap:28px}
+  footer>small{grid-column:1}
+}
+
+@media(max-width:390px){
+  .hero h1{font-size:27px}
+  .hero-photo{width:58%}
+  .hero-quote{left:68%;font-size:12px}
+  .approach h2,.help h2{font-size:51px}
+  .questions button{font-size:18px}
+}
