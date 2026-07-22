@@ -302,13 +302,28 @@ export default function Home() {
       <section className="approach textured" id="approach">
         <Daisy className="daisy-journey" />
         <div className="approach-layout">
-          <div>
+          <div className="approach-text">
             <span>EVERY AGE, STAGE & STORY</span>
             <h2>
               The INSYNC
               <br />
               <em>Approach</em>
             </h2>
+            <div className="approach-copy">
+              <p>
+                Healing looks different for everyone. That's why no two sessions
+                are the same. At INSYNC, I don't believe in ticking boxes or
+                following a script.
+              </p>
+              <p>
+                Instead, I draw from counselling psychology, life coaching,
+                creative techniques & mind-body practices to meet you exactly
+                where you are. Some conversations look like deep conversations.
+                Others involve practical coaching. Sometimes we'll use reflection
+                exercises, journaling, creative activities or movement to help
+                you explore what words can't always express.
+              </p>
+            </div>
           </div>
           <figure className="approach-photo">
             <img
@@ -317,21 +332,6 @@ export default function Home() {
             />
             <figcaption>Practical, human and whole-person support.</figcaption>
           </figure>
-        </div>
-        <div className="approach-copy">
-          <p>
-            Healing looks different for everyone. That's why no two sessions are
-            the same. At INSYNC, I don't believe in ticking boxes or following a
-            script.
-          </p>
-          <p>
-            Instead, I draw from counselling psychology, life coaching, creative
-            techniques & mind-body practices to meet you exactly where you are.
-            Some conversations look like deep conversations. Others involve
-            practical coaching. Sometimes we'll use reflection exercises,
-            journaling, creative activities or movement to help you explore what
-            words can't always express.
-          </p>
         </div>
       </section>
 
