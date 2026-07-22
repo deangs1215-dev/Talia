@@ -372,17 +372,24 @@ export default function Home() {
 
       <section className="journey textured" id="journey">
         <Daisy className="daisy-journey" />
-        <div className="journey-head">
-          <span>A HUMAN, PRACTICAL PROCESS</span>
-          <h2>
-            Our
-            <br />
-            <em>Journey</em>
-          </h2>
-          <p>
-            We work with your thoughts, emotions, relationships and lived
-            experience, not simply a list of symptoms.
-          </p>
+        <div className="journey-top">
+          <div className="journey-copy">
+            <h2>
+              Our <em>Journey</em>
+            </h2>
+            <span>A HUMAN, PRACTICAL PROCESS</span>
+            <p>
+              We work with your thoughts, emotions, relationships and lived
+              experience, not simply a list of symptoms.
+            </p>
+          </div>
+          <figure className="journey-photo">
+            <img
+              src={assetPath("/images/journey-reflection.png")}
+              alt="A person reflecting and writing in a journal"
+            />
+            <figcaption>A thoughtful path, shaped around you.</figcaption>
+          </figure>
         </div>
         <div className="steps">
           <article>
