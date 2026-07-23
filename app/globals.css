@@ -20,10 +20,10 @@ header nav a{position:relative;z-index:1;padding:12px 8px;transition:color .35s 
 
 /* Professional layout system */
 :root{--page:min(1180px,calc(100% - 64px));--line:rgba(79,81,71,.24);--shadow:0 18px 45px rgba(65,58,50,.12)}
-section{scroll-margin-top:76px}
+section{scroll-margin-top:166px}
 .dandelion-drift{display:none}
-.notice{height:auto;min-height:38px;padding:9px 20px;display:grid;place-items:center;line-height:1.5}
-header{position:relative;top:auto;height:88px;padding:0 max(32px,calc((100% - 1180px)/2));background:rgba(248,245,240,.97);border-bottom:1px solid rgba(79,81,71,.12)}
+.notice{position:sticky;top:0;z-index:110;height:auto;min-height:38px;padding:9px 20px;display:grid;place-items:center;line-height:1.5}
+header{position:sticky;top:38px;z-index:100;height:128px;padding:0 max(32px,calc((100% - 1180px)/2));background:rgba(248,245,240,.97);border-bottom:1px solid rgba(79,81,71,.12)}
 header nav{gap:34px}
 header nav a{padding:12px 0;font-weight:400}
 .hero{height:auto;min-height:660px}
@@ -110,9 +110,10 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
 
 @media(max-width:850px){
   :root{--page:min(100% - 36px,620px)}
+  section{scroll-margin-top:154px}
   .notice{min-height:42px;padding-inline:14px;font-size:8px}
-  header{height:72px;padding:0 18px}
-  header nav{top:72px;padding:20px 18px 26px;gap:4px;border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(65,58,50,.1)}
+  header{top:42px;height:112px;padding:0 18px}
+  header nav{top:112px;padding:20px 18px 26px;gap:4px;border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(65,58,50,.1)}
   header nav a{width:100%;padding:11px 0}
   .hero{min-height:710px}
   .left-paper{width:100%;height:310px;padding:54px 24px 28px;justify-content:flex-start}
@@ -256,8 +257,8 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
 /* Header room logo */
 .header-logo{
   display:flex;
-  width:116px;
-  height:100px;
+  width:132px;
+  height:118px;
   align-items:center;
   justify-content:center;
   flex:0 0 auto;
@@ -270,5 +271,5 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
 }
 
 @media(max-width:850px){
-  .header-logo{width:82px;height:76px}
+  .header-logo{width:98px;height:104px}
 }
