@@ -216,3 +216,39 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
   .approach-copy{margin-top:24px;padding-top:20px}
   .approach-copy p+p{margin-top:14px}
 }
+
+/* Restored botanical motion */
+.dandelion-drift{display:block;z-index:60;opacity:.72}
+.seed i{background:rgba(116,126,98,.48);box-shadow:0 0 2px rgba(255,255,255,.7)}
+.seed b{border-top-color:rgba(116,126,98,.58)}
+.seed b:before,.seed b:after{background:rgba(116,126,98,.52)}
+.daisy-bloom.bloom{animation:flowerReveal 1.8s cubic-bezier(.2,.85,.28,1.15) forwards}
+.daisy-bloom.bloom i{animation:petalReveal 1.6s ease-out forwards}
+.daisy-bloom.bloom b{animation:flowerHeartReveal 1.35s ease-out forwards}
+
+@keyframes flowerReveal{
+  0%{opacity:0;transform:scale(.05) rotate(-24deg)}
+  65%{opacity:.78;transform:scale(1.08) rotate(2deg)}
+  100%{opacity:.72;transform:scale(1) rotate(0)}
+}
+@keyframes petalReveal{
+  0%{height:8px;opacity:0;filter:brightness(.95)}
+  65%{height:31px;opacity:1;filter:brightness(1.08)}
+  100%{height:29px;opacity:1;filter:brightness(1)}
+}
+@keyframes flowerHeartReveal{
+  0%{opacity:0;transform:scale(.2)}
+  75%{opacity:1;transform:scale(1.08)}
+  100%{opacity:1;transform:scale(1)}
+}
+
+@media(max-width:850px){
+  .dandelion-drift{opacity:.52}
+  .seed:nth-child(even){display:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .dandelion-drift{display:none}
+  .daisy-bloom.bloom,.daisy-bloom.bloom i,.daisy-bloom.bloom b{animation:none}
+  .daisy-bloom.bloom{opacity:.72;transform:scale(1)}
+}
