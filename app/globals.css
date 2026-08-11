@@ -287,3 +287,29 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
 @media(max-width:850px){
   .hero-quote{padding:10px 11px;border-color:rgba(255,250,238,.48)}
 }
+
+/* Hero statement sits beside the portrait rather than on top of the imagery. */
+.hero-quote{
+  top:58px;
+  height:544px;
+  display:flex;
+  align-items:center;
+  padding:24px;
+  border:0;
+  background:rgba(248,245,240,.96);
+  box-shadow:none;
+  color:var(--olive);
+  text-shadow:none;
+  backdrop-filter:none;
+}
+
+@media(max-width:850px){
+  .hero-quote{
+    left:67%;
+    right:4%;
+    top:282px;
+    height:348px;
+    padding:11px;
+    background:rgba(248,245,240,.96);
+  }
+}
