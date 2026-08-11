@@ -31,6 +31,10 @@ const services = [
     "Group Counselling",
     "Supportive group spaces where shared experiences, guided reflection and practical tools help people grow together.",
   ],
+  [
+    "School & Youth Programmes",
+    "Thoughtful wellbeing programmes for schools and young people, creating space for connection, resilience and practical personal growth.",
+  ],
 ];
 
 const faqs = [
