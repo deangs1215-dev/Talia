@@ -209,15 +209,23 @@ export default function Home() {
             INSYNC Wellness.
           </p>
           <p>
-            Over the years, I've realised that people rarely need someone to
-            "fix" them. More often, they need someone who will truly listen,
-            help them understand themselves, and gently guide them towards
-            lasting change.
+            I created INSYNC because I believe wellbeing is about more than
+            simply managing life's challenges - it's about helping people
+            reconnect with themselves, build resilience, and create meaningful,
+            lasting change. Through counselling, coaching, movement and
+            creativity, I aim to provide a space where people feel supported,
+            understood and empowered to grow.
           </p>
           <p>
-            That's why I created INSYNC. A space where counselling feels human.
-            Where growth is practical. And where every person is met with
-            compassion, curiosity and care.
+            I hold a Bachelor of Arts degree in Communication Science &amp;
+            Psychology and a Bachelor of Arts Honours degree in Psychology. I
+            am a Registered Specialist Wellness Counsellor with the ASCHP, a
+            Certified Professional Life Coach, and have additional training in
+            Art &amp; Emotional Healing facilitation.
+          </p>
+          <p>
+            Every aspect of INSYNC is built on the belief that caring for the
+            mind and body together creates lasting wellbeing.
           </p>
           <strong>
             Whether you're feeling overwhelmed, stuck, disconnected, or simply
