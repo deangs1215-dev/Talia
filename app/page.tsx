@@ -478,7 +478,7 @@ export default function Home() {
         <span>Begin with a complimentary, no-pressure 15-minute call.</span>
         <div className="contact-actions">
           <a href="mailto:insync.rsa@gmail.com">EMAIL INSYNC&nbsp;&nbsp; -&gt;</a>
-          <a href="https://wa.me/27762054661">WHATSAPP&nbsp;&nbsp; -&gt;</a>
+          <a href="https://wa.me/27673161138">WHATSAPP&nbsp;&nbsp; -&gt;</a>
         </div>
       </section>
 
@@ -498,7 +498,7 @@ export default function Home() {
           <br />
           insync.rsa@gmail.com
           <br />
-          WhatsApp: 076 205 4661
+          WhatsApp: 067 316 1138
         </p>
         <small>© 2026 INSYNC WELLNESS</small>
       </footer>
