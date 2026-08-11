@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const services = [
   [
     "Online Counselling",
-    "Secure online counselling for clients throughout South Africa, offering meaningful support wherever you are.",
+    "Secure online counselling offering meaningful support wherever you are.",
   ],
   [
     "Individual Counselling",
@@ -48,7 +48,7 @@ const faqs = [
   ],
   [
     "Do you offer online sessions?",
-    "Yes. Secure online sessions are available throughout South Africa, with in-person appointments available in Johannesburg.",
+    "Yes. Secure online sessions are available, with in-person appointments available in Johannesburg.",
   ],
 ];
 
