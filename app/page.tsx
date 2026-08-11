@@ -159,7 +159,7 @@ export default function Home() {
 
       <header>
         <a className="header-logo" href="#home" aria-label="INSYNC Wellness home">
-          <img src="/Talia/insync-room-logo-transparent.png" alt="INSYNC" />
+          <img src="/Talia/insync-tree-logo-transparent.png" alt="INSYNC - Where movement meets mindset" />
         </a>
         <nav className={menu ? "show" : ""}>
           <a href="#about" onClick={() => setMenu(false)}>MEET TALIA</a>
