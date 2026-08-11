@@ -273,3 +273,17 @@ footer>div{flex-wrap:wrap;gap:18px 22px}
 @media(max-width:850px){
   .header-logo{width:166px;height:92px}
 }
+
+/* Keep the hero statement legible over its botanical image. */
+.hero-quote{
+  padding:16px 18px;
+  border:1px solid rgba(255,250,238,.56);
+  background:rgba(65,72,57,.16);
+  box-shadow:0 0 20px rgba(255,244,210,.28), inset 0 0 16px rgba(255,255,255,.1);
+  text-shadow:0 1px 3px rgba(47,49,39,.72);
+  backdrop-filter:blur(2px);
+}
+
+@media(max-width:850px){
+  .hero-quote{padding:10px 11px;border-color:rgba(255,250,238,.48)}
+}
