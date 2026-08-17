@@ -2,7 +2,10 @@ import { spawnSync } from "node:child_process";
 
 const isCustomDomain = process.env.CUSTOM_DOMAIN === "true";
 
-const build = spawnSync(process.execPath, ["node_modules/next/dist/bin/next", "build"], {
+const build = spawnSync(
+  process.execPath,
+  ["node_modules/next/dist/bin/next", "build", "--webpack"],
+  {
   env: {
     ...process.env,
     GITHUB_PAGES: "true",
@@ -11,7 +14,8 @@ const build = spawnSync(process.execPath, ["node_modules/next/dist/bin/next", "b
   },
   shell: false,
   stdio: "inherit",
-});
+  },
+);
 
 if (build.error) {
   console.error(build.error);
