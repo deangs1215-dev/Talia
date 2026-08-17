@@ -1,0 +1,58 @@
+name: Deploy to xneelo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: xneelo-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production website
+        run: CUSTOM_DOMAIN=true npm run build:pages
+
+      - name: Install SFTP client
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy website files to xneelo
+        env:
+          XNEELO_HOST: ${{ secrets.XNEELO_HOST }}
+          XNEELO_USERNAME: ${{ secrets.XNEELO_USERNAME }}
+          XNEELO_PASSWORD: ${{ secrets.XNEELO_PASSWORD }}
+          XNEELO_PORT: ${{ secrets.XNEELO_PORT }}
+          XNEELO_TARGET: ${{ secrets.XNEELO_TARGET }}
+        run: |
+          : "${XNEELO_HOST:?Missing XNEELO_HOST secret}"
+          : "${XNEELO_USERNAME:?Missing XNEELO_USERNAME secret}"
+          : "${XNEELO_PASSWORD:?Missing XNEELO_PASSWORD secret}"
+          : "${XNEELO_PORT:?Missing XNEELO_PORT secret}"
+          : "${XNEELO_TARGET:?Missing XNEELO_TARGET secret}"
+          lftp -u "$XNEELO_USERNAME","$XNEELO_PASSWORD" -p "$XNEELO_PORT" "sftp://$XNEELO_HOST" <<EOF
+          set sftp:auto-confirm yes
+          set net:timeout 30
+          set net:max-retries 2
+          mirror -R --verbose --parallel=2 out "$XNEELO_TARGET"
+          bye
+          EOF
